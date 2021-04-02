@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+          /* -------- NAVBAR -------- */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .navbar-nav {
+      font-family: "Source Sans Pro", sans-serif;
+      a {
+        color: #000 !important;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        font-size: 19px;
+        transition: 0.1s ease-in-out;
+      }
+      a:hover {
+        transform: translateY(-5%);
+      }
+    }
+    ul {
+      font-size: 1rem !important;
+    }
+    .navbar-brand {
+      letter-spacing: 1px;
+      font-size: 30px;
+      color: #000;
+      font-style: oblique;
+      font-weight: 700;
+
+      .nav-item {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+          /* -------- HEADER -------- */
+  .header {
+    background-image: url(./images/597950a6-a78a-4fb6-b26a-26b43f264562.jpg);
+    
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    padding-top: 15%;
+
+    .h-center {
+      margin-left: 4rem;
+
+      color: #ed2b33ff;
+      font-size: 1.5rem;
+
+      i {
+        font-size: 3rem;
+        color: #000;
+      }
+    }
+    .typed-text {
+      font-size: 2rem;
+      font-weight: 600;
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+          /* -------- ABOUT -------- */
+  .about {
+    padding-top: 5rem;
+    .row {
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+
+      .left-col {
+        .card {
+          margin-top: 4rem;
+          background-color: #a89c94ff !important;
+
+          color: #fff;
+
+          .card-body {
+            letter-spacing: 0.6px;
+            p {
+              line-height: 1.8rem;
+            }
+          }
+          a {
+            border: 1px solid #555555;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+      .right-col {
+        .card {
+          background-image: url(./images//myphoto.JPG);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 500px;
+        }
+      }
+    }
+  }
+          /* -------- SKILL -------- */
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .skills-title {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      .title {
+        position: relative;
+        text-align: center;
+        padding-bottom: 23px;
+        color: black;
+      }
+      .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: black;
+        transform: translateX(-50%);
+      }
+      .title::after {
+        content: "what i know";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        font-size: 20px;
+        color: #d62828;
+        padding: 5px;
+        background: #ffffff;
+        transform: translateX(-50%);
+      }
+    }
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+    .skills-row {
+      margin-top: 4rem;
+
+      .skills-left-col {
+        margin-left: 4rem;
+
+        .card {
+          margin-top: 2.7rem;
+          width: 85%;
+
+          .card-body {
+            padding: 0 3rem;
+
+            .card-title {
+              font-weight: 650;
+              letter-spacing: 1px;
+            }
+            .card-text {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .skills-right-col {
+        .bars {
+          margin-bottom: 15px;
+          .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              font-size: 19px;
+              font-weight: 500;
+            }
+          }
+          .line {
+            height: 5px;
+            width: 100%;
+            background-color: lightgrey;
+            position: relative;
+          }
+          .line::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgb(163, 136, 118);
+          }
+          .html::before {
+            width: 95%;
+          }
+          .css::before {
+            width: 95%;
+          }
+          .sass::before {
+            width: 90%;
+          }
+          .bootstrap::before {
+            width: 90%;
+          }
+          .js::before {
+            width: 80%;
+          }
+          .react::before {
+            width: 80%;
+          }
+          .redux::before {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+          /* -------- CONTACT -------- */
+  .contact-header {
+    background-color: #a89c94ff;
+    padding-top: 2rem;
+
+    .contact {
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      font-weight: 300px;
+      text-align: center;
+      color: #fff;
+      padding-top: 1rem;
+
+      h2 {
+        line-height: 1.5em;
+        letter-spacing: 4px;
+        font-weight: 300px;
+
+        padding-bottom: 3px;
+      }
+    }
+    .container {
+      label {
+        color: #fff;
+        margin-top: 5px;
+      }
+      input {
+        width: 35%;
+        background-color: #a89c94ff;
+        margin-top: 5px;
+        padding: 5px 0;
+        color: #fff;
+        border: none;
+        border-bottom: 1px solid#F0DED3;
+      }
+
+      textarea {
+        padding: 30px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        color: #fff;
+      }
+      input,
+      textarea :focus {
+        outline: none;
+      }
+
+      input[type="submit"] {
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      input[type="submit"]:hover {
+        background-color: #555555;
+        color: #fff;
+      }
+    }
+    .top-bar {
+      padding: 20px 0px;
+      text-align: center;
+      a {
+        font-size: 2rem;
+        margin: 10px;
+        color: #fff;
+        transition: all 3.35s;
+        display: inline-block;
+      }
+      a:hover {
+        transform: scale(1.1);
+        color: #555555;
+      }
+    }
+    .bottom-bar {
+      p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+          /* -------- PORTFOLIO -------- */
+  .folio {
+    padding-top: 3rem;
+
+    .folio-title {
+      text-align: center;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .card {
+      transition: transform 0.3s linear;
+      height: 220px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      border-radius: 10px;
+      .project-image {
+        height: 180px;
+      }
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .project-title {
+      padding-top: 3px;
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        h6 {
+          padding-top: 8px;
+          padding-left: 3px;
+        }
+      }
+    }
+  }
+          /* -------- RESPONSIVE -------- */
+  @media only screen and (max-width: 1200px) {
+    .header {
+      .h-center {
+        margin-left: 0;
+        padding-top: 4.5rem;
+      }
+    }
+
+    .about {
+      .left-col {
+        .card {
+          margin-top: 0rem !important;
+        }
+      }
+      .right-col {
+        .card {
+          height: 471px !important ;
+        }
+      }
+    }
+    .skills-row {
+      .skills-left-col {
+        margin-left: 0rem !important;
+        .card {
+          margin-top: 0rem !important;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .header {
+      width: 100%;
+      height: 750px;
+      background-image: url(./images/597950a6-a78a-4fb6-b26a-26b43f264562.jpg);
+      background-size: 100% 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+      .h-center {
+        font-size: 15px;
+        padding-top: 0rem;
+
+        i {
+          font-size: 2.5rem;
+        }
+        .typed-text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .about {
+      padding-top: 0rem;
+      .left-col {
+        .card {
+          width: 98%;
+          margin-top: 0;
+          .card-body {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .right-col {
+        .card {
+          height: 700px !important ;
+        }
+      }
+    }
+    .skills-row {
+      .skills-left-col {
+        width: 100%;
+        margin-left: 0 !important;
+
+        .card {
+          width: 100% !important;
+          margin-right: 1rem;
+          .card-text {
+            font-size: 16px;
+          }
+        }
+      }
+      .skills-right-col {
+        margin: 0;
+        width: 100%;
+        margin-top: 1rem;
+        .card {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .header {
+      width: 100%;
+      height: 650px;
+      background-image: url(./images//597950a6-a78a-4fb6-b26a-26b43f264562.jpg);
+      background-size: 100% 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .h-center {
+        padding-top: 0rem;
+        margin-left: 0rem;
+        font-size: 20px;
+
+        i {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .about {
+      padding-top: 0rem;
+      .left-col {
+        .card {
+          width: 98%;
+          margin-top: 0;
+          .card-body {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .skills-title {
+      margin-top: 0rem !important;
+    }
+    .skills-row {
+      .skills-left-col {
+        margin-top: 0;
+        .card {
+          width: 98% !important;
+          margin-top: 0rem !important;
+
+          .card-body {
+            width: 100% !important;
+            padding: 0;
+            .card-text {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .contact-header {
+      .container {
+        textarea {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
